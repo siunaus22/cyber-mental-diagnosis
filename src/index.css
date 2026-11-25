@@ -1,0 +1,36 @@
+:root {
+  --win98-bg: #008080;
+  --win98-gray: #c0c0c0;
+  --win98-light: #ffffff;
+  --win98-dark: #808080;
+  --win98-darker: #000000;
+  --win98-blue: #000080;
+  --win98-blue-grad: linear-gradient(90deg, #000080, #1084d0);
+  --font-mono: 'JetBrains Mono', 'Cascadia Mono', 'SFMono-Regular', Consolas, 'Courier New', monospace;
+  --font-sans: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: var(--win98-bg);
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    radial-gradient(rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+  font-family: var(--font-sans);
+  color: #111;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100dvh;
+}
